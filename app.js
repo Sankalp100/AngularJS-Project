@@ -14,9 +14,11 @@
 
         $scope.checkLunch = function(){
             if ($scope.items.length === 0){
-                $scope.message1 = "Please enter data first";
                 $scope.messageEmpty = true;
+                $scope.message1 = "Please enter data first";
+                
             }else {
+                $scope.messageEmpty = false;
                 var arrayItems = $scope.items.split(',');
                 if( arrayItems.length <= 3 ){
                     $scope.message2 = "Enjoy!";

@@ -30,11 +30,11 @@
         <div class="form-group">
             <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
         </div>
-        <div class="form-group message m1" ng-show="!messageEmpty">
+        <div class="form-group message m1" ng-show="messageEmpty" >
             <!-- Your message can go here. -->
             {{ message1}}
         </div>
-        <div class="form-group message m2">
+        <div class="form-group message m2" ng-show="!messageEmpty">
             {{ message2}}
         </div>
 
